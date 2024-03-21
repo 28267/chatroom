@@ -20,7 +20,7 @@ func (userProcess *UserProcess) Login(userId int, userPwd string) (err error) {
 	// return nil
 
 	//连接服务器
-	conn, err := net.Dial("tcp", "192.168.1.7:8888")
+	conn, err := net.Dial("tcp", "localhost:8888")
 	if err != nil {
 		fmt.Println("net.Dial-错误，err= ", err)
 		return
@@ -71,7 +71,7 @@ func (userProcess *UserProcess) Login(userId int, userPwd string) (err error) {
 }
 
 func (userPro *UserProcess) Register(userId int, userPwd string, userName string) (err error) {
-	conn, err := net.Dial("tcp", "192.168.1.7:8888")
+	conn, err := net.Dial("tcp", "localhost:8888")
 	if err != nil {
 		fmt.Println("net.Dial()-错误err=", err)
 	}

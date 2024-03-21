@@ -125,7 +125,7 @@ func main() {
 	InitUserDao()
 	fmt.Println("服务器（新的结构）在8888端口监听...")
 
-	listen, err := net.Listen("tcp", "192.168.1.7:8888")
+	listen, err := net.Listen("tcp", "localhost:8888")
 	if err != nil {
 		fmt.Println("错误，err= ", err)
 	}

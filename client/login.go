@@ -15,7 +15,7 @@ func Login(userId int, userPwd string) (err error) {
 	// return nil
 
 	//连接服务器
-	conn, err := net.Dial("tcp", "192.168.1.3:8888")
+	conn, err := net.Dial("tcp", "192.168.1.5:8888")
 	if err != nil {
 		fmt.Println("net.Dial-错误，err= ", err)
 		return

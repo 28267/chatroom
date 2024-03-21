@@ -85,6 +85,7 @@ func (userProcess *UserProcess) ServerProcessRegister(mes *message.Message) (err
 		} else {
 			registerResMes.Code = 506
 			registerResMes.Error = "注册发生未知错误"
+			fmt.Println("未知错误err= ",err.Error())
 		}
 	} else {
 		registerResMes.Code = 200
